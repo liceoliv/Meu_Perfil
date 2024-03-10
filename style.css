@@ -1,0 +1,371 @@
+:root{
+    --cor-navbar: #07031C;
+    --cor-h: #620093;
+    --cor-p: #420892;
+    --cor-link: #04C4D9;
+    --cor-link-hover:#F2F2F2;
+    --cor-hover-color: #049DD9;
+    --cor-hover-back: #9A80BF;
+    --cor-btn: #734EA6;
+    --cor-branco: #FFFFFF;
+    --cor-recommended: #65FFAA;
+}
+
+/* Reset */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica;
+    box-sizing: border-box;
+}
+
+h1, h2, h3{
+    color: var(--cor-h);
+}
+
+p{
+    color: var(--cor-p);
+}
+
+/* Navbar */
+.navbar-container{
+    width: 100%;
+    height: 80px;
+    background-color: var(--cor-navbar);
+    padding: 0 2rem;
+}
+.logo{
+    width: 50px;
+    margin-top: 15px;
+}
+
+nav{
+    position: relative;
+}
+
+.navbar-itens{
+    position: absolute;
+    right: 0;
+    height: 80px;
+    line-height: 80px;
+    margin: 0;
+    display: inline-block;
+}
+
+.navbar-itens li{
+    display: inline-block;
+    text-transform: uppercase;
+    margin-left: 25px;
+}
+
+.navbar-itens a{
+    color: var(--cor-link);
+    text-decoration: none;
+    transition: .5s;
+}
+
+.navbar-itens a:hover{
+    color: var(--cor-hover-color);
+}
+
+.default-btn{
+    padding: 15px 20px;
+    background-color: var(--cor-btn);
+    border-radius: 5px;
+}
+
+.navbar-itens .default-btn:hover{
+    background-color: var(--cor-hover-back);
+    color: var(--cor-link-hover) ;
+}
+
+/* Main Banner */
+.main-banner{
+    background-image: url(img/teclado.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 11rem 0;
+}
+
+.main-banner h1,
+.main-banner p{
+    color: var(--cor-p);
+    text-align: center;
+    font-weight: bold;
+    text-shadow: var(--cor-hover-back) 3px 2px 3px;
+}
+
+ .main-banner h1{
+    font-size: 54px;
+ }
+ .main-banner p{
+    font-size: 24px;
+ }
+
+/* Sobre Mim */
+.sobre_mim{
+    padding: 5rem 0;
+}
+
+.sobre_mim ul{
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    list-style: none;
+}
+
+.sobre_mim li{
+    flex: 1 1 200px;
+    text-align: center;
+    padding: 20px;
+}
+
+.sobre_mim h3{
+    margin-bottom: 25px;
+}
+
+.sobre_mim p{
+    line-height: 24px;
+}
+
+/* Formação */
+.formacao{
+    padding-bottom: 5rem;
+    text-align: center;
+}
+
+.formacao h2{
+    font-size: 32px;
+}
+
+.formacao p{
+    font-size: 20px;
+}
+
+.escolas{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 50px auto 0;
+}
+
+.todos{
+    flex: 1;
+    max-width: 275px;
+    margin: 0 20px;
+}
+
+.todos ul{
+    padding: 0 2px;
+}
+.todos li{
+    list-style: none;
+    height: 90px;
+    line-height: 45px;
+    background-color: var(--cor-navbar);
+    color: var(--cor-branco);
+}
+
+.todos .nivel{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 120px;
+    background-color: var(--cor-link);
+    color: var(--cor-navbar);
+    margin: 0 auto -50px;
+    font-size: 18px;
+    position: relative;
+}
+
+.todos .todos-name{
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--cor-navbar);
+    background-color: var(--cor-btn);
+    padding: 50px 0;
+}
+.todos .atual{
+    background-color: var(--cor-recommended);
+}
+
+/* portifolio */
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.imagem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: center center;
+    width: 400px;
+    height: 400px;
+    margin: 20px;
+    box-shadow: 1px 2px 20px grey; /* Adicione uma sombra às imagens */
+}
+
+.portifolio{
+    padding: 20px;
+    background-color: var(--cor-navbar);
+}
+
+/* Estilize o logo com um efeito de hover */
+.logo {
+    width: 150px;
+}
+
+.logo:hover {
+    width: 200px; /* Amplie o logo ao passar o mouse */
+}
+
+/* Estilize o botão ao passar o mouse */
+button:hover {
+    background-color: #606060;
+    color: whitesmoke;
+}
+
+/* Estilize o link ativo na navegação */
+.active {
+    color: rgb(229, 229, 229); /* Mude a cor para o link ativo */
+}
+
+/* Contato */
+.contato{
+    padding: 7rem 0 5rem 0;
+    text-align: center;
+    background-color: var(--cor-navbar);
+}
+.contato h2{
+    color: var(--cor-link);
+    margin-bottom: 15px;
+    font-size: 34px;
+}
+.contato p{
+    color: var(--cor-link);
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+.contato input,
+.contato textarea{
+    width: 200px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid var(--cor-link);
+    margin: 0 10px 20px;
+}
+
+.contato textarea{
+    display: block;
+    margin: 0 auto 20px;
+    width: 470px;
+    height: 150px;
+}
+
+.contato input[type="submit"]{
+    display: block;
+    margin: 0 auto;
+    background-color: var(--cor-btn);
+    color: var(--cor-link);
+    cursor: pointer;
+}
+.contato input[type="submit"]:hover{
+    background-color: var(--cor-hover-back);
+    color: var(--cor-link-hover);
+    border: var(--cor-link-hover);
+}
+
+/* Rodapé */
+footer{
+    padding: 1rem;
+    background-color: var(--cor-link);
+    color: var(--cor-navbar);
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Responsividede */
+/* small laptops 1100px para mais */
+@media (max-width:1100px){
+    .escolas{
+        width: 92%;
+    }
+    .todos{
+        margin: 0 4px;
+    }
+    .todos li{
+        padding: 3px;
+    }
+}
+
+/* Tablet 900px para menos*/
+@media (max-width:900px){
+    .main-banner p{
+        font-size: 30px;
+    }
+    .main-banner h1{
+        font-size: 60px;
+    }
+    .escolas{
+        display: inline-block;
+    }
+    .todos{
+        display: inline-block;
+        flex: 1;
+        margin: 22px;
+    }
+    .um{
+        min-width: 275px;
+    }
+}
+
+/* Celular 576px */
+@media (max-width:576px){
+    .navbar-itens li{
+    margin-left: 4px;
+    font-size: 15px;
+}
+   .main-banner h1{
+    font-size: 50px;
+   }
+   .main-banner p{
+    font-size: 20px;
+   }
+
+   .services-container ul{
+    flex-direction: column;
+   }
+
+   .portifolio{
+    padding: 8rem 0;
+   }
+   .portifolio h2{
+    font-size: 28px;
+   }
+   .portifolio input[type="text"]{
+    width: 50%;
+    padding: 20px;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+   .contato textarea{
+    display: block;
+    margin: 0 auto 20px;
+    width: 300px;
+    height: 150px;
+}
+    footer{
+    font-size: 12px;
+   }
+
+   .um{
+    min-width: 275px;
+}
+}

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- estilo -->
+    <link rel="stylesheet" href="style.css">
+    <title>Alice Oliveira</title>
+    <link rel="shortcut icon" href="img/letra-a.png" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+        <div class="navbar-container">
+            <nav>
+                <a href="#">
+                    <img src="img/letra-a.png" alt="logo" class="logo">
+                </a>
+
+                <ul class="navbar-itens">
+                    <li>
+                        <a href="#sobre_mim">Sobre Mim</a>
+                    </li>
+                    <li>
+                        <a href="#formacao">Formação</a>
+                    </li>
+                    <li>
+                        <a href="#portifolio">Portfólio</a>
+                    </li>
+                    <li>
+                        <a href="#contato" class="default-btn">Contato</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <main>
+            <div class="main-banner">
+                <h1>Alice</h1>
+                <p>Conheça o meu desenvolvimento</p>
+            </div>
+            <!-- Sobre Mim -->
+            <section id="sobre_mim" class="sobre_mim">
+                <ul>
+                    <li>
+                        <h3>Quem sou eu</h3>
+                        <p>Meu nome é Alice, sou estudante de Análise e Desenvolvimento de Sistema, e também estagiária. Moro em Mauá-SP, e tenho 21 anos.</p>
+                    </li>
+                    <li>
+                        <h3>Hobbies</h3>
+                        <p>Eu gosto de ler bastante no tempo livre, e adoro fazer receitas que encontro na internet (nem sempre sai do jeito esperado), gosto de ouvir músicas quando estou no meu momento de reflexão, e amo interagir com os animais que encontro na rua.</p>
+                    </li>
+                    <li>
+                        <h3>Futuro</h3>
+                        <p>Para o meu futuro, quero estar na área da tecnologia, preferencialmente em desenvolvimento de software, quero viajar o mundo e aproveitar o máximo.</p>
+                    </li>
+                </ul>
+            </section>
+            <!-- Formação -->
+            <section id="formacao" class="formacao">
+                <h2>Formação</h2>
+                <p>Minha Formação até agora</p>
+                <div class="escolas">
+                    <div class="todos um">
+                        <ul>
+                            <li class="nivel">Médio</li>
+                            <li class="todos-name">Ensino Médio</li>
+                            <li>Concluido</li>
+                            <li>Ensino Médio</li>
+                            <li>Olimpiadas de história, 3°Lugar</li>
+                            <li>Ensino Fundamental II</li>
+                            <li></li>
+                        </ul>
+                    </div>
+
+                    <div class="todos">
+                        <ul>
+                            <li class="nivel atual">Técnologo</li>
+                            <li class="todos-name">ADS Uninter</li>
+                            <li>Em andamento</li>
+                            <li>Desenvolvimento de Software</li>
+                            <li>Banco de Dados</li>
+                            <li>Desenvolvimento Web</li>
+                            <li>Desenvolvimento de aplicativos</li>
+                        </ul>
+                    </div>
+
+                    <div class="todos">
+                        <ul>
+                            <li class="nivel">Rápido</li>
+                            <li class="todos-name">Senai AI-900</li>
+                            <li>Concluido</li>
+                            <li>Inteligencia Artifical</li>
+                            <li>Azure da Microsoft</li>
+                            <li>Total 40 horas</li>
+                            <li></li>
+                        </ul>
+                    </div>
+
+                    <div class="todos">
+                        <ul>
+                            <li class="nivel">Técnico</li>
+                            <li class="todos-name">Senai Mecatrônica</li>
+                            <li>Concluido</li>
+                            <li>Mecanica</li>
+                            <li>Eletroeletronica</li>
+                            <li>Arduino C++</li>
+                            <li>Robotica/Automação</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <!-- Portifolio -->
+            <section id="portifolio" class="portifolio">
+                <h2 style="text-align: center;">Portfólio</h2>
+            <div class="flex">
+                <div class="imagem" style="background-image: url(img/gato\ principal.jpg);">
+                    <a href="https://github.com/liceoliv/clube-do-livro" target="_blank">
+                        <img src="img/gato principal.jpg" alt="Logo Clube do livro" class="logo">
+                    </a>
+                </div>
+
+                <div class="imagem" style="background-image: url(img/arduino2.png);">
+                    <a href="https://github.com/liceoliv/TCC" target="_blank">
+                        <img src="img/Arduino.png" alt="TCC arduino" class="logo">
+                    </a>
+                </div>
+
+                <div class="imagem" style="background-image: url(img/milkshake.jpg);">
+                    <a href="https://github.com/liceoliv/Pedido-de-MilkShake/blob/main/milkshake.jpg" target="_blank">
+                        <img src="img/milkshake.jpg" alt="milkshake" class="logo">
+                    </a>
+                </div>
+
+                <div class="imagem" style="background-image: url(img/doce-1.jpg);">
+                    <a href="https://github.com/liceoliv/Sweet-Shop" target="_blank">
+                        <img src="img/doce-1.jpg" alt="Loja de doces" class="logo">
+                    </a>
+                </div>
+
+            </div>
+            </section>
+            <!-- Contato -->
+            <section id="contato" class="contato">
+                <h2>Entre em contato</h2>
+                <p>Envie sua mensagem, responderei o mais breve possivel </p>
+                <form>
+                    <input type="text" name="name" id="name" placeholder="Seu nome">
+                    <input type="email" name="email" id="email" placeholder="Seu email">
+                    <textarea name="mensagem" id="mensagem" placeholder="Escreva o que você precisa"></textarea>
+                    <input type="submit" value="Enviar">
+                </form>
+            </section>
+        </main>
+        <!-- Rodapé -->
+        <footer>Site por Alice Oliveira &copy; 2024</footer>
+    </div>  
+</body>
+</html>
